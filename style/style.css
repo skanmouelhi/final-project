@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.search :hover{
+ border: 10px solid black;
+ box-shadow: #222;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1aeee1;
+    border: 6px;
+}
+body{
+    background: #050e2d;
+}   
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: 0.5s;
+    z-index: 1000;
+}
+header.sticky{
+    background: #1b2141;
+    box-shadow: 0 5px 10px #1b2141
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+Header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: #1aeee1;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeee1;
+}
+
+header .action .serchbx{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+header .action .serchbx i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #222;
+}
+header .action .serchbx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+
+/* Home banner */
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px  100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+.banner .bg .content h2{
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.banner .bg .content p{
+    font-size: 1em;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeee1;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+        letter-spacing: 1px;
+}
+.banner .bg .content a:hover{
+    background: #1aeee1;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeee1;    
+}
+.banner .bg img{
+    width: 600px;
+}
+
+
+.About{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.About .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+.About .contentBx h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+}
+.About .contentBx p{
+    max-width: 600px;
+    text-align: justify;
+    color: #dbd9d9;
+}
+
+.About .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeee1;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+        letter-spacing: 1px;
+}
+.About .contentBx a:hover{
+    background: #1aeee1;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeee1;    
+}
+.games {
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.games h2{
+    color: #fff;
+    margin: 10px 0;
+}
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.games ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+.games ul li.active {
+    background-color: #1aeee1;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeee1;
+}
+.games .cardBix {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.games .cardBix .card{
+    width: 280PX;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background-color: #1b2141;
+    overflow: hidden;
+    
+    
+}
+.games .cardBix .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.games .cardBix .card .content{
+    padding: 10px;
+} 
+.games .cardBix .card .content h4{
+    color: #fff ;
+    margin: 15px 0 ;
+}
+.games .cardBix .card .line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1.0.0.5.1) forwards;
+}
+.games .cardBix .card .line span {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #1aeee1;
+    box-shadow: 0 0 10px #1aeee1;
+    transform: scaleX(1);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1.0.0.5.1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.games .cardBix .card .info{
+    border-top: 2px solid #35407e;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.games .cardBix .card .info p{
+    font-size: 1em;
+    color: #fff;
+}
+.games .cardBix .card .info p span {
+    color: #1aeee1;
+}
+.games .cardBix .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeee1;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+        letter-spacing: 1px;
+}
+.games .cardBix .card .info a:hover{
+    background: #1aeee1;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeee1;    
+}
+
+
+.cards-container{
+    display: flex;
+}
